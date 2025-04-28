@@ -1,6 +1,11 @@
 {
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build" }
+  ],
   "routes": [
-    { "src": "/app", "dest": "/index.html" },
-    { "src": "/(.*)", "dest": "/support.html" }
+    { "src": "/", "dest": "/support.html" },
+    { "src": "/support", "dest": "/support.html" },
+    { "src": "/app", "dest": "/index.html" }
   ]
 } 

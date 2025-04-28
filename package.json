@@ -5,8 +5,7 @@
   "main": "src/main.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:static": "mkdir -p dist && cp index.html support.html dist/",
+    "build": "mkdir -p dist && cp support.html dist/ && cp index.html dist/",
     "serve": "vite preview"
   },
   "dependencies": {
